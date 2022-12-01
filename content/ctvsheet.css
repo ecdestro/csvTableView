@@ -1,0 +1,26 @@
+  /* Copyright 2022 ecdestro */
+  
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  /* Highlight table data when checkbox is checked, may need jQuery to implement. */
+  /* .highlight td {
+    background-color: green;
+  } */
+  th {
+    background-color: skyblue;
+    text-align: center;
+    height: 30px;
+  }
+  tr {
+    background-color: white;
+  }
+  tr:hover {
+    background-color: lightgray;
+  }
