@@ -8,14 +8,31 @@
 let upload = document.getElementById('csvFileInput');
 upload.onchange = () =>
 {
-    if(window.FileReader)
+    if(validateCSV(upload.files[0]))
     {
         getFileText(upload.files[0]);
     }
     else
     {
-        alert('FileReader not supported in this browser');
+        alert("The contents of this file are not supported");
     }
+}
+
+// Function: vaidateCSV(upload.files[0])
+// validateCSV() is meant to validate the file name and contents type of the uploaded file.
+
+function validateCSV(file)
+{   
+    let result = false;
+    if (file.type == "text/csv")
+    {
+        result = true;
+    }
+    else 
+    {
+        return result;
+    }
+    return result;
 }
 
 // Function: getFileText(csvfile)
@@ -77,22 +94,18 @@ function resultList(rows)
     {
         values.push(results[row]);
     }
-    // If you want to include a leading column to each row, you can uncomment the
-    // next three lines
-    // let checkBox_element = document.createElement('th');
-    // checkBox_element.innerHTML = "CheckBoxes";
-    // tableHeader.appendChild(checkBox_element);
     Object.keys(values[0]).forEach((column) => {
         let element = document.createElement('th');
         element.innerHTML = column;
         tableHeader.appendChild(element);
     });
     for (var rows in values)
-    {
+    {   
         let row = table.insertRow(-1);
-        // If you wanted to include a checkbox on each row, uncomment these two lines
-        // let box = row.insertCell(0);
-        // box.innerHTML = "<input type=checkbox name=check id=check>";
+        // The following two lines will highlight a row when it's clicked
+        row.onclick = function () {
+        row.className += "highlight";
+        }
         Object.keys(values[0]).forEach((key) => {
             let data = row.insertCell(-1);
             data.appendChild(document.createTextNode(values[rows][key]));
