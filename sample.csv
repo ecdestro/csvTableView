@@ -1,0 +1,21 @@
+Name,Age,Occupation,Country,Salary,Status
+John Doe,28,Engineer,USA,75000,Active
+Jane Smith,35,Doctor,Canada,90000,Active
+Robert Johnson,42,Teacher,UK,60000,Inactive
+Alice Brown,30,Software Developer,Germany,85000,Active
+David White,45,Manager,France,100000,Active
+Eva Lee,33,Designer,Spain,72000,Active
+Michael Chen,40,Accountant,USA,80000,Inactive
+Sophie Wang,28,Researcher,China,68000,Active
+Brian Miller,38,Marketing Specialist,USA,85000,Active
+Olivia Taylor,32,Nurse,Canada,75000,Active
+Daniel Kim,48,Lawyer,USA,110000,Inactive
+Mia Davis,29,Writer,UK,55000,Active
+Matthew Wilson,36,Consultant,Germany,95000,Active
+Isabella Martinez,31,Architect,Spain,82000,Active
+Andrew Anderson,44,Physician,USA,120000,Inactive
+Chloe Harris,27,Data Analyst,Canada,70000,Active
+James Brown,39,Entrepreneur,USA,130000,Active
+Emily Johnson,34,Librarian,UK,58000,Inactive
+Christopher Lee,41,Scientist,Germany,90000,Active
+Grace Smith,26,Graphic Designer,USA,72000,Active
